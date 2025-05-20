@@ -13,4 +13,4 @@ def exibe_html_simples(request):
     return HttpResponse(t_html)
 
 def test_render(request):
-    return render(request, 'index.html')    
+    return render(request, 'escola.html')    
