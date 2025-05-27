@@ -1,6 +1,8 @@
-from django.shortcuts import HttpResponse
+from django.shortcuts import render 
 
 # Create your views here.
-def exibe_mensagem(request):
-    t_html = '<html><body>Hello Student!</body></html>'
-    return HttpResponse(t_html)
+def listar(request):
+    return render(request, 'aluno/listarAlunos.html')
+
+def cadastrar(request):
+    return render(request, 'aluno/cadastroAluno.html')
