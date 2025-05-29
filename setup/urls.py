@@ -27,7 +27,7 @@ urlpatterns = [
     path('', include("tiposdeatividade.urls")),
     path('aluno/', include("aluno.urls", namespace='aluno')),
     path('instrutor/', include("instrutor.urls", namespace="instrutor")),
-    path('titulo/', include("titulo.urls")),
-    path('turma/', include("turma.urls")),
+    path('titulo/', include("titulo.urls", namespace="titulo")),
+    path('turma/', include("turma.urls", namespace="turma" )),
     path('utilitario/', include("utilitario.urls")), 
 ]
