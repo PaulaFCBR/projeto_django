@@ -1,7 +1,10 @@
 from django.urls import path
-
 from . import views
 
+app_name = 'utilitario'
+
 urlpatterns = [
-    path("exibemensagem", views.exibe_mensagem, name="exibe_mensagem"),
+    path("cadastro", views.cadastrar, name="cadastrar"),
+    
+   
 ]

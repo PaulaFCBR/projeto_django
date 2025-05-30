@@ -29,5 +29,5 @@ urlpatterns = [
     path('instrutor/', include("instrutor.urls", namespace="instrutor")),
     path('titulo/', include("titulo.urls", namespace="titulo")),
     path('turma/', include("turma.urls", namespace="turma" )),
-    path('utilitario/', include("utilitario.urls")), 
+    path('utilitario/', include("utilitario.urls", namespace='utilitario')), 
 ]
