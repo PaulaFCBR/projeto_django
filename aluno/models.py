@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+
 # Create your models here.
 class Aluno(models.Model):
     matricula = models.AutoField(primary_key=True, help_text='Entre com a Matricula do Aluno')
