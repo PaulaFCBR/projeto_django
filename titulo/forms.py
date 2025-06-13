@@ -5,4 +5,10 @@ class TituloForm(forms.Form):
     descricao = forms.CharField(max_length=100,
                                 required=True, 
                                 help_text='Informe o nome do Titulo')
-    
+
+
+class TituloAtualizarForm(forms.Form):
+        codigo = forms.CharField(required=True, help_text=' ID do Titulo')
+        descricao = forms.CharField(max_length=100,
+                                required=True, 
+                                help_text='Informe o nome do Titulo')
